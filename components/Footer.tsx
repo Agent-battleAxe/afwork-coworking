@@ -28,7 +28,7 @@ const Footer = () => {
         </div>
 
         <div className=' w-30%'>
-          <h1 className='px-14 py-3 border-2 border-black font-bold text-[25px] text-black '>Rejoignez Nous</h1>
+          <h1 className='px-14 py-3 border-2 border-black font-bold text-[25px] text-black'>Rejoignez Nous</h1>
 
           <div className='pt-5'>
             <p className='text-[18px] '>Situé a l'Ecole de police, Yaounde</p>
@@ -55,7 +55,7 @@ const Footer = () => {
         </div>
         
       </div>
-      <div className='text-center text-xs font-semibold py-3 bg-black text-white'>&#169; Copyright 2024 AfWork Coworking, Tous droits reservés</div>
+      <div className='text-center text-xs font-semibold py-3 bg-black text-white'>&copy; Copyright 2024 AfWork Coworking, Tous droits reservés</div>
     </div>
   )
 }
