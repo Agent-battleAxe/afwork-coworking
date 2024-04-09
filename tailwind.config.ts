@@ -17,6 +17,16 @@ const config = {
         "2xl": "1400px",
       },
     },
+    screens: {
+      'mobile' : {'max' : '639px'},
+      'tablet' : {'min' : '640px', 'max' : '799px'},
+      'laptop' : {'min' : '800px', 'max' : '1045px'},
+      'desktop' : {'min' : '1520px'},
+
+       // CUSTOM CONFIGURATION SCREENS
+    
+ 
+    },
     extend: {
       colors: {
         border: "hsl(var(--border))",

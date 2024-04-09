@@ -8,8 +8,8 @@ const Header = () => {
   return (
     <div className='h-[100vh] bg-headers w-full'>
       <div className='size-full bg-black/20 flex items-center justify-center'>
-        <div className='w-[40%] text-center relative top-14'>
-          <h1 className=' font-extrabold text-[50px] text-white leading-tight'>Trouvez votre espace de bureau a louer chez nous</h1>
+        <div className='w-[40%] laptop:w-[70%] tablet:w-[80%] mobile:w-[90%] text-center relative top-14'>
+          <h1 className=' font-extrabold text-[50px] tablet:text-[40px] mobile:text-[30px] text-white leading-tight'>Trouvez votre espace de bureau a louer chez nous</h1>
           
           <div className='mt-10 py-2 text-white font-bold'>le meilleur endroit pour travailler...</div>
           <Button className='bg-main-1'> Commencer ici </Button>

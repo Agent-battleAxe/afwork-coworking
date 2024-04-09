@@ -58,11 +58,14 @@ const Contact = () => {
   return (
     <div id='contact_sec' className=''>
       <h1 className='text-center font-extrabold text-gray-500  text-[25px]'>Contactez Nous</h1>
-        <div className='h-[inherit] bg-white/20 flex justify-center items-center'>
-            <div className='h-[600px] w-[40%] bg-white px-5 py-5' >
+        <div className='h-[inherit] bg-white/20 tablet:block mobile:block text-center flex justify-center items-center'>
+            <div className='h-[600px] w-[40%] laptop:w-[55%] tablet:w-[80%] mobile:w-full tablet:inline-block bg-white px-5 py-5' >
+              <div className=''>
                 <IoIosChatbubbles  className='text-[70px] text-main-1 relative left-[50%] translate-x-[-50%] '/>
                 <h1 className='font-bold text-center pt-2 text-[25px] capitalize text-black/60'>Vous avez des questions?</h1>
                 <p className='pt-1 font-thin text-[13px] text-center'>Posez la ici dans ce formulaire s'il vous plait</p>
+              </div>
+               
 
                 {alreadySend && (
                   <div className='pt-10 text-center'>
@@ -72,7 +75,7 @@ const Contact = () => {
                   </div>
                 )}
                 {!alreadySend && (
-                  <form onSubmit={sendEmail}  className='px-10 pt-8'>
+                  <form onSubmit={sendEmail}  className='px-10 pt-8 '>
                   <label className='font-bold text-gray-400 text-[14px]'>Nom Complet *</label>
                   <input type="text" name='user_name' required className='w-full mt-2 mb-1.5 px-2 py-2 border border-gray-300 rounded-md' placeholder='John' onChange={(e:any)=> SetUserName(e.target.value)}/>
 
@@ -103,7 +106,7 @@ const Contact = () => {
               src={bg_images.contact_1}
               alt='Contact-image'
               height={350}
-              className='w-[40%]'
+              className='w-[40%] mobile:inline-block mobile:mt-5 tablet:hidden'
             
             />
         </div>

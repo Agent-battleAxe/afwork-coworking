@@ -11,14 +11,14 @@ import { plans } from '@/constant';
 
 const MiddleSec = () => {
   return (
-    <div className='px-10 py-16'>
+    <div className='px-10 laptop:px-5 tablet:px-5 mobile:px-2 py-16'>
         <h1 className='text-center font-extrabold text-gray-500  text-[30px]'>Installation Disponible</h1>
-        <div className=' w-full flex justify-center items-center pt-5'>
-            <div className=' w-[70%]'>
-                <div className='flex'>
+        <div className=' w-full flex mobile:flex-col mobile:items-center justify-center items-center pt-5'>
+            <div className=' w-[70%] tablet:w-[90%] mobile:w-full'>
+                <div className='flex mobile:flex-col mobile:items-center'>
                     {intallment.slice(0,2).map((i,) =>{
                         return (
-                            <div key={i.name} className='shadow-xl py-6 px-3'>
+                            <div key={i.name} className='shadow-xl w-[50%] mobile:w-[98%] py-6 px-3'>
                                 <div className='flex gap-3 text-gray-500 items-center'>
                                     <i.icon className='text-[45px]'/>
                                     <h1 className='uppercase font-semibold'>{i.name}</h1>
@@ -29,10 +29,10 @@ const MiddleSec = () => {
                     })}
                 </div>
 
-                <div className='flex pt-8'>
+                <div className='flex pt-8 mobile:flex-col mobile:items-center'>
                     {intallment.slice(2,4).map((i,) =>{
                         return (
-                            <div key={i.name} className='shadow-xl py-6 px-3'>
+                            <div key={i.name} className='shadow-xl w-[50%] mobile:w-[98%] py-6 px-3'>
                                 <div className='flex gap-3 text-gray-500 items-center'>
                                     <i.icon className='text-[45px]'/>
                                     <h1 className='uppercase font-semibold'>{i.name}</h1>
@@ -48,38 +48,39 @@ const MiddleSec = () => {
         </div>
 
         {/* About Us Section */}
-        <div id='about_sec' className='flex px-16 py-16 justify-center items-center gap-10'>
+        <div id='about_sec' className='mobile:block tablet:block flex mobile:px-5 px-16 tablet:px-10 py-16 justify-center items-center gap-10'>
             <Image
                 src={bg_images.about_1}
                 alt='About us'
                 height={340}
+                className='laptop:w-[35%] tablet:h-[300px] mobile:-[250px]'
             />
-            <div className='w-[40%] '>
+            <div className='w-[40%] laptop:w-[60%] tablet:w-full mobile:w-full tablet:pt-10 mobile:pt-10 '>
                 <h1 className='font-bold text-main-1 text-[30px]  '>A Propos de Nous</h1>
-                <p className=' pt-5 text-gray-500 text-sm text-justify'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi, 
-                    dolores eaque dolorum odit quibusdam nihil voluptatum. Nemo consequuntur 
-                    eos vitae nesciunt distinctio ullam animi sunt optio aliquam praesentium? Quidem, accusantium.
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi, 
-                    dolores eaque dolorum odit quibusdam nihil voluptatum. Nemo consequuntur 
-                    eos vitae nesciunt distinctio ullam animi sunt optio aliquam praesentium? Quidem, accusantium.</p> 
-                    <p className='pt-5 text-gray-500 text-sm text-justify'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus, 
-                        modi consequuntur. Tempora dolorem accusantium nihil veritatis!</p>
+                <p className=' pt-5 text-gray-500 text-sm text-justify'>
+                    Bienvenue chez Afwork Coworking, votre espace de travail collaboratif par excellence. 
+                    Nous sommes passionnés par la création d'un environnement professionnel dynamique et inspirant, 
+                    conçu pour stimuler la créativité, favoriser les connexions et encourager la croissance de votre entreprise. À Afwork Coworking, 
+                    nous croyons fermement au pouvoir de la collaboration et de la communauté. 
+                    Notre espace moderne et accueillant est conçu pour répondre aux besoins divers des travailleurs indépendants, 
+                    des entrepreneurs, des petites entreprises et des professionnels nomades.</p> 
+                    <p className='pt-5 text-gray-500 text-sm text-justify'>Notre mission est de fournir un espace de travail flexible, 
+                    de haute qualité et abordable où les individus et les entreprises peuvent s'épanouir et prospérer!</p>
             </div>
         </div>
 
         {/* Pricing Section */}
-        <h1 id='pricing_sec' className='text-left text-sm bg-main-1 w-fit ml-52 mt-5 px-5 py-1 text-white font-bold'>Nos Tarifs</h1>
+        <h1 id='pricing_sec' className='text-left text-sm bg-main-1 w-fit mobile:ml-2 ml-52 tablet:ml-10 laptop:ml-20 mt-5 mobile:mt-0 px-5 py-1 text-white font-bold'>Nos Tarifs</h1>
         <div>
-            <p className='pt-5 pl-52 text-gray-500 text-sm text-justify'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus, 
-                        modi consequuntur. Tempora dolorem accusantium nihil veritatis!</p>
+            <p className='pt-5 pl-52 laptop:pl-20 mobile:pl-2 tablet:pl-10 text-gray-500 text-sm text-justify'>Découvrez nos tarifs flexibles conçus pour répondre à vos besoins spécifiques en matière d'espace de travail. Explorez nos offres tarifaires transparentes et trouvez la solution idéale pour votre entreprise</p>
 
-            <div className='flex px-8 gap-5 items-center py-10'>
+            <div className='tablet:block mobile:flex-col flex px-8 laptop:px-2 laptop:gap-3 gap-5 items-center py-10'>
                 {plans.slice(0,2).map((i) =>{
                     return(
-                        <div key={i.name} className='shadow-xl w-[25%] h-[300px] px-5 py-2'>
+                        <div key={i.name} className='tablet:inline-block shadow-xl w-[25%] mobile:w-full tablet:w-[50%] laptop:w-[27%] laptop:h-[350px] h-[300px] px-5 py-2'>
                             <div className='py-5'>
                                 <h1 className=' text-center text-lg font-bold text-gray-700'>{i.name} </h1>
-                                <p className='text-center text-gray-500 text-sm font-light'> Lorem ipsum, dolor sit amet </p>
+                                <p className='text-center text-gray-500 text-sm font-light'> {i.desc} </p>
                             </div>
                             
                             <div className='w-full h-0.5 bg-gray-300'></div>
@@ -99,10 +100,10 @@ const MiddleSec = () => {
 
                 {plans.slice(2,3).map((i) =>{
                     return(
-                        <div key={i.name} className='shadow-xl bg-main-1 w-[25%] h-[400px] px-5 py-2'>
+                        <div key={i.name} className='tablet:inline-block shadow-xl tablet:mt-5 bg-main-1 w-[25%] mobile:w-full tablet:w-[50%] laptop:w-[27%] laptop:h-[450px] h-[400px] px-5 py-2'>
                             <div className='py-5'>
                                 <h1 className=' text-center text-lg font-bold text-gray-700'>{i.name} </h1>
-                                <p className='text-center text-white text-sm font-light'> Lorem ipsum, dolor sit amet </p>
+                                <p className='text-center text-white text-sm font-light'>  {i.desc} </p>
                             </div>
                             
                             <div className='w-full h-0.5 bg-black'></div>
@@ -129,10 +130,10 @@ const MiddleSec = () => {
 
                 {plans.slice(3,4).map((i) =>{
                     return(
-                        <div key={i.name} className='shadow-xl w-[25%] h-[300px] px-5 py-2'>
+                        <div key={i.name} className='tablet:inline-block shadow-xl w-[25%] mobile:w-full tablet:w-[50%] laptop:w-[27%] laptop:h-[350px]  h-[300px] px-5 py-2'>
                             <div className='py-5'>
                                 <h1 className=' text-center text-lg font-bold text-gray-700'>{i.name} </h1>
-                                <p className='text-center text-gray-500 text-sm font-light'> Lorem ipsum, dolor sit amet </p>
+                                <p className='text-center text-gray-500 text-sm font-light'>  {i.desc} </p>
                             </div>
                             
                             <div className='w-full h-0.5 bg-gray-300'></div>
