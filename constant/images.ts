@@ -12,6 +12,14 @@ import slider_2 from '../public/images/slider-2.jpg'
 import about_1 from '../public/images/about-1.png'
 import contact_1 from '../public/images/contact-1.png'
 
+import img_1 from '../public/images/img-1.jpg'
+import img_2 from '../public/images/img-2.jpg'
+import img_3 from '../public/images/img-3.jpg'
+import img_4 from '../public/images/img-4.jpg'
+import img_5 from '../public/images/img-5.jpg'
+import img_6 from '../public/images/img-6.jpg'
+
+
 
 export const logo = {afwork}
 
@@ -19,3 +27,4 @@ export const bg_images = {contact_1,about_1,af_w1, af_w2, af_w3, af_w4, af_w5, a
 
 export const slider_bg = {slider_2}
 
+export const galery_img = [img_1,img_2,img_3,img_4,img_5,img_6]

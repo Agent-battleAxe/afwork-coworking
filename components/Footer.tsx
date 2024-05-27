@@ -31,7 +31,7 @@ const Footer = () => {
           <h1 className='px-14 py-3 border-2 border-black font-bold text-[25px] text-black'>Rejoignez Nous</h1>
 
           <div className='pt-5 tablet:text-center'>
-            <p className='text-[18px] '>Situé a l'Ecole de police, Yaounde</p>
+            <p className='text-[18px] '>Situé a l'Ecole de police, Immeuble CCA, Yaounde</p>
             <p className='text-[18px]'>CAMEROUN</p>
 
             <p className='pt-3 flex mobile:justify-center tablet:justify-center items-center gap-3 text-[17px] '>

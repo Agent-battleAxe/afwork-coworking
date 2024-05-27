@@ -21,11 +21,11 @@ export const navLinks = [
         icon : GiPriceTag,
         urlPath : '#pricing_sec'
     },
-    // {
-    //     name : 'Gallery',
-    //     icon : GrGallery,
-    //     urlPath : '/'
-    // },
+    {
+        name : 'Galerie',
+        icon : GrGallery,
+        urlPath : '#gallery_sec'
+    },
     {
         name : 'Contact',
         icon : FaPhone,
